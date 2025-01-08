@@ -1,6 +1,6 @@
-from django import forms
-from django_countries.fields import CountryField
-from django_countries.widgets import CountrySelectWidget
+from django import forms # type: ignore
+from django_countries.fields import CountryField # type: ignore
+from django_countries.widgets import CountrySelectWidget # type: ignore
 
 PAYMENT_CHOICES = (
     ('S', 'Stripe'),

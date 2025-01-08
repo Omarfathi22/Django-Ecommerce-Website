@@ -1,18 +1,18 @@
-from django.conf import settings
-from django.contrib import messages
-from django.core.exceptions import ObjectDoesNotExist
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView, DetailView, View
-from django.shortcuts import redirect
-from django.utils import timezone
+from django.conf import settings # type: ignore
+from django.contrib import messages # type: ignore
+from django.core.exceptions import ObjectDoesNotExist # type: ignore
+from django.contrib.auth.decorators import login_required # type: ignore
+from django.contrib.auth.mixins import LoginRequiredMixin # type: ignore
+from django.shortcuts import render, get_object_or_404 # type: ignore
+from django.views.generic import ListView, DetailView, View # type: ignore
+from django.shortcuts import redirect # type: ignore
+from django.utils import timezone # type: ignore
 from .forms import CheckoutForm, CouponForm, RefundForm, PaymentForm
 from .models import Item, OrderItem, Order, Address, Payment, Coupon, Refund, UserProfile
 
 import random
 import string
-import stripe
+import stripe # type: ignore
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 

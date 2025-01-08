@@ -12,7 +12,7 @@ STRIPE_TEST_SECRET_KEY = "sk_test_51HCPjRH1COjpS8d9AkvQ0Boi9CeC3rcWn4SUJiPrEUEf7
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -104,3 +104,4 @@ LOGIN_REDIRECT_URL = '/'
 # CRISPY FORMS
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
